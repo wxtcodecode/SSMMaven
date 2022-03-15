@@ -23,6 +23,7 @@ public class LoginController {
     @RequestMapping("/auth/login")
     public String checkEmpByLoginAccount(@RequestParam String loginAccount, @RequestParam String loginPassword, HttpSession session, Model model) {
         Emp emp = loginService.selectEmpByLoginAccount(loginAccount, loginPassword);
+        System.out.println(emp);
         if(emp == null) {
             model.addAttribute("message", ImperialCourtConst.LOGIN_FAILED_MESSAGE);
             return "index";
