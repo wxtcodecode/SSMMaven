@@ -10,5 +10,6 @@ public class Demo {
         System.out.println("master test!");
         System.out.println("lyw love");
         System.out.println("push again");
+        System.out.println("pull test!");
     }
 }
